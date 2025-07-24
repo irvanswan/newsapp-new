@@ -1,0 +1,31 @@
+.Fields {
+    @apply w-full flex flex-col gap-3;
+
+    & .Label {
+        @apply flex gap-1.5 w-full;
+    }
+
+    & .Input {
+        @apply w-full py-6 px-7 border rounded-2xl;
+
+        &.Error {
+            @apply  border-red-300;
+        }
+
+        &.Primary{
+            @apply border-blue-300;
+        }
+
+        &.Secondary{
+            @apply border-gray-300;
+        }
+
+        &.Warning{
+            @apply border-yellow-300;
+        }
+
+        &.Success{
+            @apply border-green-300;
+        }
+    }
+}

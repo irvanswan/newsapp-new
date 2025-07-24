@@ -1,0 +1,10 @@
+@layer components {
+    .Navbar {
+        @apply w-full flex justify-between sticky bg-[#000];
+    }
+
+    .Title {
+        font-family: "Noto Sans Georgian", sans-serif;
+        font-weight: 700;
+    }
+}

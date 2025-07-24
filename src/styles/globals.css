@@ -1,0 +1,16 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* cores */
+@import "tailwindcss";
+@import './preflight.css';
+
+/* themes */
+@import './themes/_colors.css';
+@import './themes/_fonts.css';
+@import './themes/_spacing.css';
+
+/* utilities */
+@import './utilities/_border.utilites.css';
+@import './utilities/_button.utilities.css';
+@import './utilities/_text.utilities.css';

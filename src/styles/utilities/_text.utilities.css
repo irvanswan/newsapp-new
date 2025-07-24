@@ -1,0 +1,21 @@
+@layer utilities {
+	.Text.Error {
+		color: theme('colors.red.500') !important;
+	}
+
+	.Text.Primary {
+		color: theme('colors.primary.500') !important;
+	}
+
+	.Text.Secondary {
+		color: theme('colors.neutral.500') !important;
+	}
+
+	.Text.Warning {
+		color: theme('colors.yellow.500') !important;
+	}
+
+	.Text.Success {
+		color: theme('colors.green.500') !important;
+	}
+}

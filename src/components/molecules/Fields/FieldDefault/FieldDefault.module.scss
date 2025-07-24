@@ -1,0 +1,12 @@
+
+.FieldDefault {
+    @apply w-full flex flex-col;
+
+    & .Label {
+        @apply flex w-full;
+    }
+
+    & .Input {
+        @apply w-full;
+    }
+}

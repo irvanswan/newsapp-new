@@ -1,0 +1,14 @@
+@theme {
+    --spacing-tiny: 0.25rem;
+    --spacing-x-small: 0.5rem;
+    --spacing-small: 0.75rem;
+    --spacing-med: 1rem;
+    --spacing-large: 1.5rem;
+    --spacing-x-large: 2rem;
+    --spacing-xx-large: 2.5rem;
+    --spacing-xxx-large: 3rem;
+    --spacing-jumbo: 3.5rem;
+    --spacing-x-jumbo: 4rem;
+    --spacing-xx-jumbo: 5rem;
+    --spacing-xxx-jumbo: 6rem;
+}

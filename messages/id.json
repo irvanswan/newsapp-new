@@ -1,0 +1,12 @@
+{
+    "general": {
+        "default": "",
+        "email_address": "alamat email",
+        "password": "kata sandi"
+    },
+    "login": {
+        "sign_up": "daftar",
+        "login": "masuk",
+        "or_login_with": "atau login dengan"
+    }
+}

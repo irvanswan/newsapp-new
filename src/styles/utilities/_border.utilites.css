@@ -1,0 +1,22 @@
+@layer utilities {
+    .Borders.Error {
+        border-color: theme('colors.red.500') !important;
+    }
+
+    .Borders.Primary {
+        border-color: theme('colors.primary.500') !important;
+    }
+
+    .Borders.Secondary {
+        border-color: theme('colors.neutral.500') !important;
+    }
+
+    .Borders.Warning {
+        border-color: theme('colors.yellow.500') !important;
+    }
+
+    .Borders.Success {
+        border-color: theme('colors.green.500') !important;
+    }
+
+}

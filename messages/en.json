@@ -1,0 +1,12 @@
+{
+    "general": {
+        "default": "",
+        "email_address": "email address",
+        "password": "password"
+    },
+    "login": {
+        "sign_up": "sign up",
+        "login": "login",
+        "or_login_with": "or login with"
+    }
+}
