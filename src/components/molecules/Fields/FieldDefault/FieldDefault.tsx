@@ -41,7 +41,7 @@ const FieldDefault: React.FC<FieldsI> = ({
 						value={label}
 						{...(section && { section })}
 						type="p"
-						className="font-bold capitalize"
+						className="font-bold capitalize text-Dark"
 						formatted={formatted}
 					/>
 					{isRequired && (

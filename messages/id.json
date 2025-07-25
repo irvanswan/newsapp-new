@@ -2,11 +2,13 @@
     "general": {
         "default": "",
         "email_address": "alamat email",
-        "password": "kata sandi"
+        "password": "kata sandi",
+        "contact_us": "kontak kami"
     },
     "login": {
         "sign_up": "daftar",
         "login": "masuk",
-        "or_login_with": "atau login dengan"
+        "or_login_with": "atau login dengan",
+        "dont_have_account": "Tidak mempunyai akun ?"
     }
 }

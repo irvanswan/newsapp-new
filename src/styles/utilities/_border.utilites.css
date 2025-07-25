@@ -4,7 +4,11 @@
     }
 
     .Borders.Primary {
-        border-color: theme('colors.primary.500') !important;
+        border-color: theme('colors.Blue') !important;
+    }
+
+    .Borders.Dark{
+        border-color: theme('colors.Dark') !important;
     }
 
     .Borders.Secondary {

@@ -6,6 +6,7 @@ export type colorFields =
 | 'Secondary'
 | 'Warning'
 | 'Success'
+| 'Dark'
 
 export type typeFields =
 | 'phone'
