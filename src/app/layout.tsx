@@ -1,3 +1,4 @@
+import Layout from '@/components/layout';
 import Styles from './layout.module.scss';
 import "@/styles/globals.css";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
@@ -11,11 +12,14 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={Styles.Layout}
       >
         <NextIntlClientProvider locale={params.locale} messages={messages}>
-          {children}
+          <Layout>
+            {children}
+          </Layout>
         </NextIntlClientProvider>
       </body>
     </html >

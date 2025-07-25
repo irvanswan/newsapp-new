@@ -1,93 +1,94 @@
 @theme {
-  ---font-h1: 3.5rem;
-  --line-h1: 5.25rem;
-  --weight-h1: 400;
+  --text-h1: 3.5rem;
+  --text-h1--line-height: 5.25rem;
+  --text-h1--font-weight: 400;
 
-  --font-h2: 3rem;
-  --line-h2: 4.5rem;
-  --weight-h2: 400;
+  --text-h2: 3rem;
+  --text-h2--line-height: 4.5rem;
+  --text-h2--font-weight: 400;
 
-  --font-h3: 2.5rem;
-  --line-h3: 3.75rem;
-  --weight-h3: 400;
+  --text-h3: 2.5rem;
+  --text-h3--line-height: 3.75rem;
+  --text-h3--font-weight: 400;
 
-  --font-h4: 2rem;
-  --line-h4: 3rem;
-  --weight-h4: 400;
+  --text-h4: 2rem;
+  --text-h4--line-height: 3rem;
+  --text-h4--font-weight: 400;
 
-  --font-h1-bold: 3.5rem;
-  --line-h1-bold: 5.25rem;
-  --weight-h1-bold: 700;
+  --text-h1-bold: 3.5rem;
+  --text-h1-bold--line-height: 5.25rem;
+  --text-h1-bold--font-weight: 700;
 
-  --font-h2-bold: 3rem;
-  --line-h2-bold: 4.5rem;
-  --weight-h2-bold: 700;
+  --text-h2-bold: 3rem;
+  --text-h2-bold--line-height: 4.5rem;
+  --text-h2-bold--font-weight: 700;
 
-  --font-h3-bold: 2.5rem;
-  --line-h3-bold: 3.75rem;
-  --weight-h3-bold: 700;
+  --text-h3-bold: 2.5rem;
+  --text-h3-bold--line-height: 3.75rem;
+  --text-h3-bold--font-weight: 700;
 
-  --font-h4-bold: 2rem;
-  --line-h4-bold: 3rem;
-  --weight-h4-bold: 700;
+  --text-h4-bold: 2rem;
+  --text-h4-bold--line-height: 3rem;
+  --text-h4-bold--font-weight: 700;
 
-  --font-title-1: 1.75rem;
-  --line-title-1: 2.625rem;
-  --weight-title-1: 400;
+  --text-title-1: 1.75rem;
+  --text-title-1--line-height: 2.625rem;
+  --text-title-1--font-weight: 400;
 
-  --font-title-2: 1.5rem;
-  --line-title-2: 2.25rem;
-  --weight-title-2: 400;
+  --text-title-2: 1.5rem;
+  --text-title-2--line-height: 2.25rem;
+  --text-title-2--font-weight: 400;
 
-  --font-title-1-bold: 1.75rem;
-  --line-title-1-bold: 2.625rem;
-  --weight-title-1-bold: 700;
+  --text-title-1-bold: 1.75rem;
+  --text-title-1-bold--line-height: 2.625rem;
+  --text-title-1-bold--font-weight: 700;
 
-  --font-title-2-bold: 1.5rem;
-  --line-title-2-bold: 2.25rem;
-  --weight-title-2-bold: 700;
+  --text-title-2-bold: 1.5rem;
+  --text-title-2-bold--line-height: 2.25rem;
+  --text-title-2-bold--font-weight: 700;
 
-  --font-body-1: 1.25rem;
-  --line-body-1: 1.875rem;
-  --weight-body-1: 400;
+  --text-body-1: 1.25rem;
+  --text-body-1--line-height: 1.875rem;
+  --text-body-1--font-weight: 400;
 
-  --font-body-2: 1rem;
-  --line-body-2: 1.5rem;
-  --weight-body-2: 400;
+  --text-body-2: 1rem;
+  --text-body-2--line-height: 1.5rem;
+  --text-body-2--font-weight: 400;
 
-  --font-body-1-bold: 1.25rem;
-  --line-body-1-bold: 1.875rem;
-  --weight-body-1-bold: 700;
+  --text-body-1-bold: 1.25rem;
+  --text-body-1-bold--line-height: 1.875rem;
+  --text-body-1-bold--font-weight: 700;
 
-  --font-body-2-bold: 1rem;
-  --line-body-2-bold: 1.5rem;
-  --weight-body-2-bold: 700;
+  --text-body-2-bold: 1rem;
+  --text-body-2-bold--line-height: 1.5rem;
+  --text-body-2-bold--font-weight: 700;
 
-  --font-small-1: 0.875rem;
-  --line-small-1: 1.313rem;
-  --weight-small-1: 400;
+  --text-small-1: 0.875rem;
+  --text-small-1--line-height: 1.313rem;
+  --text-small-1--font-weight: 400;
 
-  --font-small-1-medium: 0.875rem;
-  --line-small-1-medium: 1.313rem;
-  --weight-small-1-medium: 500;
+  --text-small-1-medium: 0.875rem;
+  --text-small-1-medium--line-height: 1.313rem;
+  --text-small-1-medium--font-weight: 500;
 
-  --font-small-1-bold: 0.875rem;
-  --line-small-1-bold: 1.313rem;
-  --weight-small-1-bold: 700;
+  --text-small-1-bold: 0.875rem;
+  --text-small-1-bold--line-height: 1.313rem;
+  --text-small-1-bold--font-weight: 700;
 
-  --font-micro: 0.75rem;
-  --line-micro: 1.125rem;
-  --weight-micro: 400;
+  --text-micro: 0.75rem;
+  --text-micro--line-height: 1.125rem;
+  --text-micro--font-weight: 400;
 
-  --font-micro-bold: 0.75rem;
-  --line-micro-bold: 1.125rem;
-  --weight-micro-bold: 700;
+  --text-micro-bold: 0.75rem;
+  --text-micro-bold--line-height: 1.125rem;
+  --text-micro-bold--font-weight: 700;
 
-  --font-local: 0.625rem;
-  --line-local: 0.938rem;
-  --weight-local: 400;
+  --text-local: 0.625rem;
+  --text-local--line-height: 0.938rem;
+  --text-local--font-weight: 400;
 
-  --font-local-bold: 0.625rem;
-  --line-local-bold: 0.938rem;
-  --weight-local-bold: 700;
+  --text-local-bold: 0.625rem;
+  --text-local-bold--line-height: 0.938rem;
+  --text-local-bold--font-weight: 700;
+
 }

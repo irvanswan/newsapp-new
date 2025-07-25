@@ -2,11 +2,13 @@
     "general": {
         "default": "",
         "email_address": "email address",
-        "password": "password"
+        "password": "password",
+        "contact_us": "contact us"
     },
     "login": {
         "sign_up": "sign up",
         "login": "login",
-        "or_login_with": "or login with"
+        "or_login_with": "or login with",
+        "dont_have_account": "Don’t have an account ?"
     }
 }

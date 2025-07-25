@@ -2,16 +2,15 @@
 .Login {
   @apply w-full flex items-stretch;
 
-
   .Banner {
     @apply flex w-1/2 overflow-hidden bg-cover h-auto;
   }
 
   .Form_Container {
-    @apply flex flex-col w-1/2 overflow-hidden min-h-screen;
+    @apply flex flex-col overflow-hidden min-h-screen items-center justify-center;
   }
 
   .Form_Section {
-    @apply flex flex-col h-full overflow-auto justify-center;
+    @apply flex flex-col h-full w-full overflow-auto justify-center;
   }
 }
