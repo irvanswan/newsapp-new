@@ -3,12 +3,22 @@
         "default": "",
         "email_address": "alamat email",
         "password": "kata sandi",
-        "contact_us": "kontak kami"
+        "confirm_password": "kata sandi konfirmasi",
+        "contact_us": "kontak kami",
+        "login": "masuk",
+        "sign_up": "daftar",
+        "or_login_with": "atau login dengan",
+        "dont_have_account": "Tidak mempunyai akun ?",
+        "already_have_account": "sudah mempunyai akun ?",
+        "submit": "menyerahkan",
+        "back_to_login": "Kembali ke login"
     },
     "login": {
-        "sign_up": "daftar",
-        "login": "masuk",
-        "or_login_with": "atau login dengan",
+        "title": "masuk",
         "dont_have_account": "Tidak mempunyai akun ?"
+    },
+    "sign-up": {
+        "title": "daftar",
+        "already_have_account": "sudah mempunyai akun ?"
     }
 }

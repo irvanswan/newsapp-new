@@ -3,12 +3,20 @@
         "default": "",
         "email_address": "email address",
         "password": "password",
-        "contact_us": "contact us"
+        "confirm_password": "confirm password",
+        "contact_us": "contact us",
+        "login": "login",
+        "sign_up": "sign up",
+        "or_login_with": "or login with",
+        "dont_have_account": "don’t have an account ?",
+        "already_have_account": "already have an account ?",
+        "submit": "submit",
+        "back_to_login": "back to login"
     },
     "login": {
-        "sign_up": "sign up",
-        "login": "login",
-        "or_login_with": "or login with",
-        "dont_have_account": "Don’t have an account ?"
+        "title": "login"
+    },
+    "sign-up": {
+        "title": "sign up"
     }
 }
