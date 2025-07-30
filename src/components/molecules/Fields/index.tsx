@@ -1,24 +1,26 @@
+// Fields.tsx
 import React from "react";
-import dynamic from "next/dynamic";
-import { FieldsI } from "./Fields.interface";
+import { FieldsContainerI } from "./Fields.interface";
+import { FieldValues } from "react-hook-form";
+import FieldDefault from "./FieldDefault/FieldDefault";
 
-const DefaultField = dynamic(() => import('@/components/molecules/Fields/FieldDefault/FieldDefault'), {
-  ssr: true
-})
+const Fields = <T extends FieldValues>(props: FieldsContainerI<T>) => {
+  const { type, section, formatted = false, methods, ...rest } = props;
 
-const Fields: React.FC<FieldsI> = ({ type, section, formatted, ...props }) => {
   switch (type) {
     case 'phone':
       return <div />;
+
     default:
       return (
-        <DefaultField
+        <FieldDefault
           type={type}
-          {...((formatted && section) && { section })}
+          {...(methods && {control: methods.control})}
           formatted={formatted}
-          {...props}
+          section={formatted ? section : undefined}
+          {...rest}
         />
-      )
+      );
   }
 };
 
