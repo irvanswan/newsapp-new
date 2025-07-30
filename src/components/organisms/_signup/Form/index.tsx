@@ -1,24 +1,23 @@
+'use client';
 import dynamic from 'next/dynamic';
 import Styles from '../signup.module.scss';
 import Link from 'next/link';
-
+import Fields from '@/components/molecules/Fields';
+import { useSignup } from '../SignupContex';
+import Form from '@/components/molecules/Form';
 const Button = dynamic(() => import('@/components/molecules/Button/Button'));
 const Text = dynamic(() => import('@/components/atoms/Text/Text'), {
 	ssr: true,
 });
-
-const Fields = dynamic(() => import('@/components/molecules/Fields'), {
-	ssr: true,
-})
-
 const Icon = dynamic(() => import('@/components/atoms/Icon'), {
 	ssr: true,
 })
 
-const LoginForm = () => {
+const SigninForm = () => {
+	const { handlerSubmit, methods } = useSignup();
 	return (
 		<section className={`${Styles.Form_Container} w-full md:w-1/2 md:px-28 p-12`}>
-			<form className={`${Styles.Form_Section} gap-4`}>
+			<Form onSubmit={handlerSubmit} methods={methods} className={`${Styles.Form_Section} gap-4`}>
 				<div className='flex items-center gap-4'>
 					<Link
 						href="/login"
@@ -42,32 +41,38 @@ const LoginForm = () => {
 					className='capitalize text-5xl font-bold text-Dark pb-3.5'
 				/>
 				<Fields
+				  methods={methods}
 					isRequired
 					variant='Primary'
 					label='email_address'
 					placeholder='email_address'
 					type='email'
 					id='email'
+					name='email'
 					formatted
 					section='general'
 				/>
 				<Fields
+				  methods={methods}
 					isRequired
 					variant='Primary'
 					label='password'
 					type='password'
 					placeholder='password'
-					id='email'
+					id='password'
+					name='password'
 					formatted
 					section='general'
 				/>
 				<Fields
+				  methods={methods}
 					isRequired
+					name='confirm_password'
 					variant='Primary'
 					label='confirm_password'
 					type='password'
 					placeholder='confirm_password'
-					id='email'
+					id='confirm-password'
 					formatted
 					section='general'
 				/>
@@ -81,9 +86,9 @@ const LoginForm = () => {
 						className='!py-6 !text-white !capitalize !font-bold !mt-3.5'
 					/>
 				</div>
-			</form>
+			</Form>
 		</section>
 	)
 }
 
-export default LoginForm;
+export default SigninForm;
