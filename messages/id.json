@@ -11,7 +11,9 @@
         "dont_have_account": "Tidak mempunyai akun ?",
         "already_have_account": "sudah mempunyai akun ?",
         "submit": "menyerahkan",
-        "back_to_login": "Kembali ke login"
+        "back_to_login": "Kembali ke login",
+        "show": "tampilkan",
+        "hide": "sembunyikan"
     },
     "login": {
         "title": "masuk",

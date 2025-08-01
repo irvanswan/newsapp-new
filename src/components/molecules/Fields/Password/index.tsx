@@ -1,13 +1,13 @@
 'use client'
 
-import Styles from './FieldDefault.module.scss';
+import Styles from './FieldPassword.module.scss';
 import { FieldsI } from "../Fields.interface";
 import { useMemo, useState } from "react";
 import Text from "@/components/atoms/Text/Text";
 import Input from "@/components/atoms/Input/Input";
 import { Controller, FieldValues } from 'react-hook-form';
 
-const FieldDefault = <T extends FieldValues>({
+const FieldPassword = <T extends FieldValues>({
   label,
   id,
   name,
@@ -17,10 +17,10 @@ const FieldDefault = <T extends FieldValues>({
   section,
   placeholder,
   formatted = false,
-  type,
   ...props
 }: FieldsI<T>) => {
-  const [focused, setFocused] = useState(false);
+  const [focused, setFocused] = useState<boolean>(false);
+  const [visible, setVisible] = useState<boolean>(false);
 
   const ringVariantClass = useMemo(() => {
     switch (variant) {
@@ -36,7 +36,7 @@ const FieldDefault = <T extends FieldValues>({
     }`;
 
   return (
-    <div className={`${Styles.FieldDefault} gap-3`}>
+    <div className={`${Styles.FieldPassword} gap-3`}>
       {label && (
         <label htmlFor={id} className={`${Styles.Label} gap-1.5`}>
           <Text
@@ -72,8 +72,17 @@ const FieldDefault = <T extends FieldValues>({
                   placeholder={placeholder}
                   formatted={formatted}
                   id={id}
-                  type={type}
+                  type={visible ? 'text' : 'password'}
                 />
+                <div className={`w-fit pl-4 flex items-center border-l border-Blue`}>
+                  <Text
+                    onClick={() => setVisible((prevState) => !prevState)}
+                    value={visible ? 'hide' : 'show'}
+                    className='capitalize cursor-pointer hover:text-Blue font-bold'
+                    formatted
+                    type='small'
+                  />
+                </div>
               </div>
               {error && (
                 <small className="text-red-500 text-small-1">
@@ -94,12 +103,21 @@ const FieldDefault = <T extends FieldValues>({
             placeholder={placeholder}
             formatted={formatted}
             id={id}
-            type={type}
+            type={visible ? 'text' : 'password'}
           />
+          <div className={`w-fit pl-4 flex items-center border-l border-Blue`}>
+            <Text
+              onClick={() => setVisible((prevState) => !prevState)}
+              value={visible ? 'hide' : 'show'}
+              className='capitalize cursor-pointer hover:text-Blue font-bold'
+              formatted
+              type='small'
+            />
+          </div>
         </div>
       )}
     </div>
   );
 };
 
-export default FieldDefault;
+export default FieldPassword;
