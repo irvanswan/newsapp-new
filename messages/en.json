@@ -11,7 +11,9 @@
         "dont_have_account": "don’t have an account ?",
         "already_have_account": "already have an account ?",
         "submit": "submit",
-        "back_to_login": "back to login"
+        "back_to_login": "back to login",
+        "show": "show",
+        "hide": "hide"
     },
     "login": {
         "title": "login"
