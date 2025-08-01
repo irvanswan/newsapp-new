@@ -17,7 +17,8 @@ const FieldDefault = <T extends FieldValues>({
   section,
   placeholder,
   formatted = false,
-  type
+  type,
+  ...props
 }: FieldsI<T>) => {
   const [focused, setFocused] = useState(false);
 
@@ -31,9 +32,8 @@ const FieldDefault = <T extends FieldValues>({
     }
   }, [variant]);
 
-  const borderClass = `py-6 px-7 rounded-2xl border Borders ${variant} ${
-    focused ? ringVariantClass : ``
-  }`;
+  const borderClass = `py-6 px-7 rounded-2xl border Borders ${variant} ${focused ? ringVariantClass : ``
+    }`;
 
   return (
     <div className={`${Styles.FieldDefault} gap-3`}>
@@ -66,6 +66,7 @@ const FieldDefault = <T extends FieldValues>({
               <div className={`${Styles.Input} ${borderClass} ${error ? '!border-red-500' : ''}`}>
                 <Input
                   {...field}
+                  name={name}
                   onBlur={() => setFocused(false)}
                   onFocus={() => setFocused(true)}
                   placeholder={placeholder}
@@ -85,7 +86,9 @@ const FieldDefault = <T extends FieldValues>({
       ) : (
         <div className={`${Styles.Input} ${borderClass}`}>
           <Input
+            {...props}
             name={name}
+            onChange={(e) => (e.target.value)}
             onBlur={() => setFocused(false)}
             onFocus={() => setFocused(true)}
             placeholder={placeholder}

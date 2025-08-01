@@ -5,8 +5,8 @@ import { useForm, UseFormReturn } from 'react-hook-form';
 import * as yup from 'yup';
 
 const schema = yup.object({
-  email: yup.string().email().required().nonNullable().default(null),
-  password: yup.string().required().nonNullable().default(null),
+  email: yup.string().email().required().nonNullable().default(''),
+  password: yup.string().required().nonNullable().default(''),
 })
 
 export type LoginFormValues = yup.InferType<typeof schema>;
