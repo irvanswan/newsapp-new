@@ -13,7 +13,8 @@
         "submit": "submit",
         "back_to_login": "back to login",
         "show": "show",
-        "hide": "hide"
+        "hide": "hide",
+        "category": "category"
     },
     "login": {
         "title": "login"

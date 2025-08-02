@@ -7,4 +7,8 @@ export const configLayout: Record<string, configLayoutI> = {
     withFooter: true,
     withNav: false,
   },
+  "sign-up": {
+    withFooter: true,
+    withNav: false,
+  }
 };

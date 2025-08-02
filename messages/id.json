@@ -13,7 +13,8 @@
         "submit": "menyerahkan",
         "back_to_login": "Kembali ke login",
         "show": "tampilkan",
-        "hide": "sembunyikan"
+        "hide": "sembunyikan",
+        "category": "kategori"
     },
     "login": {
         "title": "masuk",
