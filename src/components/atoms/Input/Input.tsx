@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from './Input.module.scss';
+import Styles from './Input.module.css';
 import { InputI } from './Input.interface';
 import { useTranslations } from 'next-intl';
 

@@ -9,6 +9,7 @@ module.exports = {
     "./src/app/**/*.{ts,tsx}",
     "./src/components/**/*.{ts,tsx}",
   ],
+  darkMode: ["selector", "[data-theme='dark']"],
    corePlugins: {
     preflight: false,
   },

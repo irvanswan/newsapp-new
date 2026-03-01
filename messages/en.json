@@ -14,7 +14,15 @@
         "back_to_login": "back to login",
         "show": "show",
         "hide": "hide",
-        "category": "category"
+        "category": "category",
+        "home": "home",
+        "articles": "articles",
+        "about": "about",
+        "start_exploring": "start exploring",
+        "logout": "logout",
+        "search": "search",
+        "more": "more",
+        "profile": "profile"
     },
     "login": {
         "title": "login"

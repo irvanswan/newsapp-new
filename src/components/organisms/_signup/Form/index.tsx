@@ -1,6 +1,6 @@
 'use client';
 import dynamic from 'next/dynamic';
-import Styles from '../signup.module.scss';
+import Styles from '../signup.module.css';
 import Link from 'next/link';
 import Fields from '@/components/molecules/Fields';
 import { useSignup } from '../SignupContex';
@@ -83,7 +83,7 @@ const SigninForm = () => {
 						variant='Primary'
 						type='submit'
 						formatted
-						className='!py-6 !text-white !capitalize !font-bold !mt-3.5'
+						className='!p-4 !text-white !capitalize !font-bold !mt-3.5'
 					/>
 				</div>
 			</Form>

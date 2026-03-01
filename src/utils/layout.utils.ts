@@ -12,3 +12,7 @@ export const configLayout: Record<string, configLayoutI> = {
     withNav: false,
   }
 };
+
+export interface ContainerComponentProps {
+  children: React.ReactNode;
+}

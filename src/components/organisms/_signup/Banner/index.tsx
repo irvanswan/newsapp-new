@@ -1,4 +1,4 @@
-import Styles from '../signup.module.scss';
+import Styles from '../signup.module.css';
 
 const SignupBanner = () => {
 	return (

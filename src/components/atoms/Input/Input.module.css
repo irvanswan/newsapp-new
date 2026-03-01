@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.Input {
+  @apply w-full bg-transparent;
+}

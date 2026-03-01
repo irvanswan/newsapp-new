@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.Footer {
+  @apply w-full h-fit flex;
+}

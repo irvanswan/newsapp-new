@@ -1,0 +1,7 @@
+@reference "tailwindcss";
+
+.ThemeButton {
+  @apply fixed bottom-[var(--theme-button-offset,2.5rem)] right-[var(--theme-button-offset,2.5rem)] z-50 p-4 rounded-full shadow-md cursor-pointer select-none flex items-center justify-center gap-2;
+  &:hover { transform: translateY(-2px); border-color: var(--accent); }
+  &:active { transform: translateY(0); }
+}

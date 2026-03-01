@@ -14,7 +14,15 @@
         "back_to_login": "Kembali ke login",
         "show": "tampilkan",
         "hide": "sembunyikan",
-        "category": "kategori"
+        "category": "kategori",
+        "home": "beranda",
+        "articles": "artikel",
+        "about": "tentang",
+        "start_exploring": "mulai menjelajah",
+        "logout": "keluar",
+        "search": "cari",
+        "more": "lebih banyak",
+        "profile": "profil"
     },
     "login": {
         "title": "masuk",

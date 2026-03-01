@@ -1,13 +1,13 @@
 import dynamic from "next/dynamic";
 import { ButtonI } from "./Button.interface";
-import Styles from './Button.module.scss';
+import Styles from './Button.module.css';
 
 const Text = dynamic(() => import('@/components/atoms/Text/Text'));
 
 const Button: React.FC<ButtonI> = ({ className, section, formatted, icon, text, variant, ...props }) => {
 	return (
 		<button
-			className={`${Styles.Button} outline-0 ${className ? className : '!py-6'} rounded-2xl Buttons ${variant}`}
+			className={`${Styles.Button} outline-0 ${className ? className : '!py-4'} rounded-2xl Buttons ${variant}`}
 			{...props}
 		>
 			{icon && (

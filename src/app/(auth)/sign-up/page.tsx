@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic';
-import Styles from '@/components/organisms/_signup/signup.module.scss';
+import Styles from '@/components/organisms/_signup/signup.module.css';
 import { SignupProvider } from '@/components/organisms/_signup/SignupContex';
+import { getSession } from '@/lib/session';
+import { redirect } from 'next/navigation';
 
 const Banner = dynamic(() => import('@/components/organisms/_signup/Banner'));
 const Form = dynamic(() => import('@/components/organisms/_signup/Form'));
@@ -10,7 +12,13 @@ export const metadata = {
 	description: 'This Page Login'
 }
 
-export default function Signup() {
+export default async function Signup() {
+	const session = await getSession();
+
+	if (session?.isLoggedIn) {
+		redirect('/');
+	}
+
 	return (
 		<SignupProvider>
 			<div className={`${Styles.Signup} flex-col md:flex-row`}>

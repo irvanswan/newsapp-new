@@ -1,3 +1,5 @@
-.Navbar{
-    @apply w-full justify-between sticky top-[0] flex z-50;
+.Navbar {
+    @apply w-full justify-between sticky top-[0] flex z-50 border-b;
+    transition: background-color 250ms ease, border-color 250ms ease, backdrop-filter 250ms ease;
+    color: var(--text-primary);
 }

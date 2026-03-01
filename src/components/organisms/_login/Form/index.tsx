@@ -1,6 +1,6 @@
 'use client'
 import dynamic from 'next/dynamic';
-import Styles from '@/components/organisms/_login/login.module.scss';
+import Styles from '@/components/organisms/_login/login.module.css';
 import Link from 'next/link';
 import { useLogin } from '@/components/organisms/_login/LoginContext';
 import Form from '@/components/molecules/Form';
@@ -54,7 +54,7 @@ const LoginForm = () => {
             variant='Primary'
             type='submit'
             formatted
-            className='!py-6 !text-white !capitalize !font-bold !mt-3.5'
+            className='!p-4 !text-white !capitalize !font-bold !mt-3.5'
           />
           <div className='flex w-full items-center gap-3'>
             <div className='border-b !border-Blue w-full' />
@@ -68,7 +68,7 @@ const LoginForm = () => {
           </div>
           <Link
             href="/sign-up"
-            className='bg-Dark w-full capitalize text-white text-small-1-bold text-center py-6 rounded-2xl'
+            className='bg-Dark w-full capitalize text-white text-small-1-bold text-center p-4 rounded-2xl'
           >
             <Text
               value='sign_up'
