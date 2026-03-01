@@ -1,4 +1,4 @@
-import Styles from '../login.module.scss';
+import Styles from '../login.module.css';
 
 const LoginBanner = () => {
 	return (

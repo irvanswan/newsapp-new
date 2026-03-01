@@ -1,6 +1,6 @@
 'use client'
 
-import Styles from './FieldPassword.module.scss';
+import Styles from './FieldPassword.module.css';
 import { FieldsI } from "../Fields.interface";
 import { useMemo, useState } from "react";
 import Text from "@/components/atoms/Text/Text";
@@ -32,7 +32,7 @@ const FieldPassword = <T extends FieldValues>({
     }
   }, [variant]);
 
-  const borderClass = `py-6 px-7 rounded-2xl border Borders ${variant} ${focused ? ringVariantClass : ``
+  const borderClass = `p-4 rounded-2xl border Borders ${variant} ${focused ? ringVariantClass : ``
     }`;
 
   return (

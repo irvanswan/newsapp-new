@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import Styles from './Footer.module.scss';
+import Styles from './Footer.module.css';
 
 const Text = dynamic(() => import('@/components/atoms/Text/Text'));
 const Footer = () => {

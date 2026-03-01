@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.Button {
+  @apply w-full;
+}

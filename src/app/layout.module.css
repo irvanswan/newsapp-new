@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.Layout {
+  @apply h-screen w-screen overflow-y-auto overflow-x-hidden;
+}

@@ -5,6 +5,9 @@
 @import "tailwindcss";
 @import './preflight.css';
 
+/* Configure dark mode to use data-theme attribute */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /* themes */
 @import './themes/_colors.css';
 @import './themes/_fonts.css';
@@ -14,6 +17,32 @@
 @import './utilities/_border.utilites.css';
 @import './utilities/_button.utilities.css';
 @import './utilities/_text.utilities.css';
+
+:root {
+  color-scheme: light;
+  --surface-primary: #fdfdff;
+  --surface-secondary: #f5f6f7;
+  --text-primary: #0d253c;
+  --text-muted: #5d6878;
+  --border-primary: #ebedf0;
+  --accent: #376aed;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-primary: #0f172a;
+  --surface-secondary: #111827;
+  --text-primary: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border-primary: #1f2937;
+  --accent: #8fb3ff;
+}
+
+body {
+  background: var(--surface-primary);
+  color: var(--text-primary);
+  transition: background-color 150ms ease, color 150ms ease;
+}
 
 .embla__viewport {
   overflow: hidden;

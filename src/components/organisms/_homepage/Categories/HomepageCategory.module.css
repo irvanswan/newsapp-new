@@ -1,0 +1,4 @@
+.HomepageCategory {
+  @apply w-full flex flex-col bg-transparent min-h-[20dvh];
+  color: var(--text-primary) !important;
+}

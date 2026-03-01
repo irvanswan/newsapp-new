@@ -1,0 +1,10 @@
+import { NextResponse } from 'next/server';
+import { getSession } from '@/lib/session';
+
+export async function GET() {
+  const session = await getSession();
+  return NextResponse.json({
+    isLoggedIn: Boolean(session.isLoggedIn && session.user),
+    user: session.user ?? null,
+  });
+}

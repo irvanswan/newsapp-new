@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.Layout {
+  @apply flex flex-col h-auto w-screen p-0 m-0;
+}
